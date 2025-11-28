@@ -1,5 +1,5 @@
 let modal = document.getElementById('modal_nav');
-let burgerBtn = document.getElementById('burgerBtn');
+let burgerBtn = document.getElementById('burger');
 
 burgerBtn.addEventListener('click',function(){
     modal.classList.toggle('active');
