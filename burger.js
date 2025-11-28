@@ -3,16 +3,14 @@ let burgerBtn = document.getElementById('burger');
 
 burgerBtn.addEventListener('click', function() {
     if (modal.classList.contains('active')) {
-        modal.style.transform = 'translateY(-100%)';
+        // Закрываем с анимацией
+        modal.classList.add('closing');
         setTimeout(() => {
-            modal.classList.remove('active');
+            modal.classList.remove('active', 'closing');
         }, 300);
     } else {
+        // Открываем
         modal.classList.add('active');
-        // Небольшая задержка чтобы успел примениться display: flex
-        setTimeout(() => {
-            modal.style.transform = 'translateY(0)';
-        }, 10);
     }
 });
 
