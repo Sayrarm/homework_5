@@ -107,7 +107,7 @@ a:hover {
 
 .modal_nav {
     position: absolute;
-    top: 30px;
+    top: 50px;
     background-color: #2A5B79;
     width: 100%;
 
@@ -115,7 +115,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    padding: 10px 0;
+    padding: 0 0 10px 0;
 }
 
 .border {
@@ -124,7 +124,11 @@ a:hover {
     margin: 0;
 }
 
-#modal_nav {
+.modal_nav {
     display: none;
+}
+
+.modal_nav.active {
+    display: flex;
 }
 
