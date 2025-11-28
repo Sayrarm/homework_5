@@ -7,7 +7,7 @@ burgerBtn.addEventListener('click', function() {
         modal.classList.add('closing');
         setTimeout(() => {
             modal.classList.remove('active', 'closing');
-        }, 300);
+        }, 200);
     } else {
         // Открываем
         modal.classList.add('active');
